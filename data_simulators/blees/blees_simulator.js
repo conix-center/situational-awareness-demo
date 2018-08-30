@@ -84,6 +84,12 @@ function generate_blees_packet() {
         acceleration_advertisement: getRandom(-1,1),
         acceleration_interval: getRandom(0,1),
         sequence_number: seq,
+        _meta: {
+            received_time: new Date().toISOString(),
+            device_id: 'c098e5300010',
+            receiver: 'ble_gateway',
+            gateway_id: 'c098e5c0000a',
+        }
     };
     
     last_out = out;
