@@ -5,16 +5,14 @@ This repository will hold the code and documentation for the year one
 situational awareness demonstrator. The demonstrator consists for
 four data flows:
 
-1) A user will be wearing UWB localization tags. These tags will send ranges
-over WiFi to an MQTT broker.
-2) The location and orientation of the user's VR headset will be published
-to MQTT.
-3) A drone will be flying around the space being localized by OptiTrack. The
-drone's location will also be published to the MQTT broker.
+1) A user will be wearing a Vive Pro headset.
+2) The location and orientation of the user's VR headset will be tracked via OptiTrack.
+3) A drone will be flying around the space being localized by OptiTrack.
 4) On the drone will be a BLEES environmental sensor. It will send lux
 readings to the MQTT broker
+5) Unity and Drone Control will retrieve OptiTrack localization information via VRPN.
 
-Using these four data flows:
+Using these data flows:
 
 1) The drone will fly around collecting lux data (in a sweep or random walk)
 while avoiding the user.
